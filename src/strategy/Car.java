@@ -13,12 +13,13 @@ public abstract class Car{
         this.transmissionBehaviour = transmissionBehaviour;
     }
 
-    public TransmissionBehaviour getTransmissionBehaviour() {
-        return transmissionBehaviour;
+    public String getTransmissionBehaviour() {
+        return transmissionBehaviour.gearShiftDown();
     }
 
-    public EngineBehaviour getEngineBehaviour() {
-        return engineBehaviour;
+
+    public String getEngineBehaviour() {
+        return engineBehaviour.start();
     }
 
     public void setEngineBehaviour(EngineBehaviour engineBehaviour) {

@@ -1,6 +1,6 @@
 package strategy;
 
 public interface TransmissionBehaviour {
-    void gearShiftUp();
-    void gearShiftDown();
+    String gearShiftUp();
+    String gearShiftDown();
 }
