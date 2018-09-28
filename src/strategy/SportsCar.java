@@ -10,4 +10,13 @@ public class SportsCar extends Car{
     public String transmission() {
         return "has Manuel Transmission.";
     }
+
+    public String start()
+    {
+        return "Engine has started and is ready";
+    }
+    public String stop()
+    {
+        return "Engine has stopped";
+    }
 }
