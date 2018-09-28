@@ -2,11 +2,28 @@ package strategy;
 
 public abstract class Car{
 
-    public abstract String start();
+    TransmissionBehaviour transmissionBehaviour;
+    EngineBehaviour engineBehaviour;
 
-    public abstract String stop();
+    public Car() {
 
-    public abstract String engine();
+    }
 
-    public abstract String transmission();
+    public void setTransmissionBehaviour(TransmissionBehaviour transmissionBehaviour) {
+        this.transmissionBehaviour = transmissionBehaviour;
+    }
+
+    public TransmissionBehaviour getTransmissionBehaviour() {
+        return transmissionBehaviour;
+    }
+
+    public EngineBehaviour getEngineBehaviour() {
+        return engineBehaviour;
+    }
+
+    public void setEngineBehaviour(EngineBehaviour engineBehaviour) {
+        this.engineBehaviour = engineBehaviour;
+    }
+
+
 }
