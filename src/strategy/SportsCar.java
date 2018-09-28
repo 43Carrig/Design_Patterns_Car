@@ -3,11 +3,11 @@ package strategy;
 public class SportsCar extends Car{
     @Override
     public String engine() {
-        return "Fast engine!";
+        return "has Fast engine!";
     }
 
     @Override
     public String transmission() {
-        return "Manuel Transmission.";
+        return "has Manuel Transmission.";
     }
 }

@@ -4,11 +4,11 @@ public abstract class Car{
 
     public String start()
     {
-        return "Engine started and ready";
+        return "Engine has started and is ready";
     }
     public String stop()
     {
-        return "Engine stopped";
+        return "Engine has stopped";
     }
     public abstract String engine();
 
