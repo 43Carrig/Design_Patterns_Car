@@ -1,6 +1,6 @@
 package strategy;
 
-public class ModelCar extends Car {
+public class ModelCar extends CarBehaviour {
 
     public ModelCar()
     {

@@ -1,6 +1,6 @@
 package strategy;
 
-public class SportsCar extends Car{
+public class SportsCar extends CarBehaviour {
 
     public SportsCar(){
         transmissionBehaviour = new Manual();

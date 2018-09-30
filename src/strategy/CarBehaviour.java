@@ -1,11 +1,11 @@
 package strategy;
 
-public abstract class Car{
+public abstract class CarBehaviour {
 
     TransmissionBehaviour transmissionBehaviour;
     EngineBehaviour engineBehaviour;
 
-    public Car() {
+    public CarBehaviour() {
 
     }
 

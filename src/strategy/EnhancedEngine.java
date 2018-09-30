@@ -13,6 +13,6 @@ public class EnhancedEngine implements EngineBehaviour {
 
     @Override
     public String noEngine() {
-        return "Car has engine";
+        return "CarType has engine";
     }
 }

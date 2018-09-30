@@ -13,6 +13,6 @@ public class NoEngine implements EngineBehaviour {
 
     @Override
     public String noEngine() {
-        return "Car.. has no engine";
+        return "CarType.. has no engine";
     }
 }

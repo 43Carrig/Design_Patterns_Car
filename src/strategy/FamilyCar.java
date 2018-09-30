@@ -1,6 +1,6 @@
 package strategy;
 
-public class FamilyCar extends Car{
+public class FamilyCar extends CarBehaviour {
 
 
 

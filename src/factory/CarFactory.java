@@ -1,23 +1,19 @@
 package factory;
 
-public abstract class CarFactory {
+public class CarFactory {
 
-    private String type;
+    public CarType createCar(String type)
+    {
+        //CarType car = null;
 
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public String CarModel() {
-        return "Car Factory is finished producing an " + this.getType();
-    }
-
-    public String CarColor() {
-        return "Car Factory is painting a " + this.getType();
+        if(type.toLowerCase().equals("opel"))
+        {
+            return new Opel();
+        }
+        else if(type.toLowerCase().equals("ford"))
+        {
+            return new Ford();
+        }
+        return null;
     }
 }
-
