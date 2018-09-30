@@ -25,6 +25,10 @@ public class CarSystemDriver{
         CarType carFord = carFactory.createCar(typeFord);
         System.out.println(carFord.getColor());
 
+        String typeFord1 = "Ford";
+        CarType carFord1 = carFactory.createCar(typeFord1);
+        System.out.println(carFord.getModel());
+
 /*
         System.out.println();
         CarBehaviour familyCar = new FamilyCar();
