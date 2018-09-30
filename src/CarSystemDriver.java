@@ -1,9 +1,8 @@
-package strategy;
-
 import factory.CarFactory;
 import factory.CarType;
 import factory.Ford;
 import factory.Opel;
+import strategy.*;
 
 
 public class CarSystemDriver{
