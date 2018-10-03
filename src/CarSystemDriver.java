@@ -1,8 +1,5 @@
 import decorator.*;
-import factory.CarFactory;
-import factory.CarType;
-import factory.Ford;
-import factory.Opel;
+import factory.*;
 import strategy.*;
 
 
@@ -12,6 +9,12 @@ public class CarSystemDriver{
         // decorator
         CarModification carModification = new Modification();
         System.out.println(carModification.toString() + ".. " + carModification.getPrice());
+
+        carModification = new Alloys(carModification);
+        System.out.println(carModification.toString() + ".. " + carModification.getPrice());
+
+        carModification = new LeatherSeats(carModification);
+        System.out.println(carModification.toString() + ".. " +carModification.getPrice());
 
  /*       // factory
         CarType fordFactory = new Ford();
