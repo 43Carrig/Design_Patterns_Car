@@ -4,8 +4,6 @@ public class CarFactory {
 
     public CarType createCar(String type)
     {
-        //CarType car = null;
-
         if(type.toLowerCase().equals("opel"))
         {
             return new Opel();
