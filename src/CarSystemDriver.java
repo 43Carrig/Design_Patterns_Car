@@ -1,3 +1,4 @@
+import decorator.*;
 import factory.CarFactory;
 import factory.CarType;
 import factory.Ford;
@@ -8,7 +9,11 @@ import strategy.*;
 public class CarSystemDriver{
     public static void main(String args[])
     {
+        // decorator
+        CarModification carModification = new Modification();
+        System.out.println(carModification.toString() + ".. " + carModification.getPrice());
 
+ /*       // factory
         CarType fordFactory = new Ford();
         System.out.println("Ford.." + fordFactory.getColor());
 
@@ -27,9 +32,9 @@ public class CarSystemDriver{
 
         String typeFord1 = "Ford";
         CarType carFord1 = carFactory.createCar(typeFord1);
-        System.out.println(carFord.getModel());
+        System.out.println(carFord.getModel());*/
 
-/*
+/*      // strategy
         System.out.println();
         CarBehaviour familyCar = new FamilyCar();
         System.out.println("Family car is " + familyCar.getTransmissionBehaviour());
