@@ -8,7 +8,7 @@ public class Modification extends CarModification{
     }
     public String toString()
     {
-        return "Car Modifications";
+        return "vehicles.Car Modifications";
     }
 
 }
