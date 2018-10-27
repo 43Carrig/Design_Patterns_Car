@@ -1,9 +1,15 @@
 package vehicles;
 
+import strategy.*;
+
 public abstract class Car {
 
     private String model;
     private double price;
+
+    // Strategy
+    TransmissionBehaviour transmissionBehaviour;
+    EngineBehaviour engineBehaviour;
 
 
     public Car() {
@@ -37,5 +43,21 @@ public abstract class Car {
                 "Model='" + getModel() + '\'' +
                 ", Price=" + getPrice() +
                 '}';
+    }
+
+    public void gearUp() {
+        transmissionBehaviour.gearShiftUp();
+    }
+
+    public void gearDown() {
+        transmissionBehaviour.gearShiftDown();
+    }
+
+    public void startEngine() {
+        engineBehaviour.start();
+    }
+
+    public void stopEngine() {
+        engineBehaviour.stop();
     }
 }

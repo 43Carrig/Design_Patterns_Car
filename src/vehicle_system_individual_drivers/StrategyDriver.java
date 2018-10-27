@@ -1,10 +1,17 @@
 package vehicle_system_individual_drivers;
 
 import strategy.*;
+import vehicles.Car;
+import vehicles.Fiesta;
 
 public class StrategyDriver {
     public static void main(String args[])
     {
+        Car car = new Fiesta();
+        System.out.println(car.toString()+ "\n");
+
+        System.out.println("---Car Behaviour----\n");
+
         System.out.println();
         CarBehaviour familyCar = new FamilyCar();
         System.out.println("Family car is " + familyCar.getTransmissionBehaviour());
