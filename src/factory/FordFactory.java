@@ -14,7 +14,6 @@ public class FordFactory extends CarFactory {
         if(model.equals(CarType.FORD_FIESTA))
         {
             c = new Fiesta();
-            c.setPrice(15000);
         }
 
         return c;
