@@ -1,12 +1,11 @@
-import decorator.*;
-import factory.*;
-import strategy.*;
+package vehicle_system_individual_drivers;
 
 
 public class CarSystemDriver{
     public static void main(String args[])
     {
         // decorator
+        /*
         CarModification carModification = new Modification();
         System.out.println(carModification.toString() + ".. " + carModification.getPrice());
 
@@ -14,7 +13,7 @@ public class CarSystemDriver{
         System.out.println(carModification.toString() + ".. " + carModification.getPrice());
 
         carModification = new LeatherSeats(carModification);
-        System.out.println(carModification.toString() + ".. " +carModification.getPrice());
+        System.out.println(carModification.toString() + ".. " +carModification.getPrice());*/
 
  /*       // factory
         CarType fordFactory = new FordFactory();
