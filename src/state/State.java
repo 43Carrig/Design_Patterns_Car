@@ -1,8 +1,8 @@
 package state;
 
 public interface State {
-    void turnKeyToStart();
-    void accelerate();
-    void brake();
-    void turnKeyToStop();
+    void turnKeyToStartEngine();
+    void accelerateCar();
+    void brakeCar();
+    void turnKeyToStopEngine();
 }

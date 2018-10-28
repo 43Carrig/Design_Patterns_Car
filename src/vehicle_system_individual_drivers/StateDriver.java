@@ -5,10 +5,10 @@ public class StateDriver {
 
         /*CarState carState3 = new CarState(3);
 
-        carState3.turnKeyToStart();
-        carState3.accelerate();
-        carState3.brake();
-        carState3.turnKeyToStop();
+        carState3.turnKeyToStartEngine();
+        carState3.accelerateCar();
+        carState3.brakeCar();
+        carState3.turnKeyToStopEngine();
 
         System.out.println(carState3);
 
@@ -16,10 +16,10 @@ public class StateDriver {
 
         CarState carState2 = new CarState(2);
 
-        carState2.turnKeyToStart();
-        carState2.accelerate();
-        carState2.brake();
-        carState2.turnKeyToStop();
+        carState2.turnKeyToStartEngine();
+        carState2.accelerateCar();
+        carState2.brakeCar();
+        carState2.turnKeyToStopEngine();
 
         System.out.println(carState2);
 
@@ -27,10 +27,10 @@ public class StateDriver {
 
         CarState carState1 = new CarState(1);
 
-        carState1.turnKeyToStart();
-        carState1.accelerate();
-        carState1.brake();
-        carState1.turnKeyToStop();
+        carState1.turnKeyToStartEngine();
+        carState1.accelerateCar();
+        carState1.brakeCar();
+        carState1.turnKeyToStopEngine();
 
         System.out.println(carState1);
 
@@ -38,10 +38,10 @@ public class StateDriver {
 
         CarState carState0 = new CarState(0);
 
-        carState0.turnKeyToStart();
-        carState0.accelerate();
-        carState0.brake();
-        carState0.turnKeyToStop();
+        carState0.turnKeyToStartEngine();
+        carState0.accelerateCar();
+        carState0.brakeCar();
+        carState0.turnKeyToStopEngine();
 
         System.out.println(carState0);*/
     }
