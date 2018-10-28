@@ -1,11 +1,15 @@
 package vehicles;
 
+import decorator.CarModification;
 import strategy.*;
 
 public abstract class Car {
 
     private String model;
     private double price;
+
+    // Decorator
+    private CarModification modifications;
 
     // Strategy
     TransmissionBehaviour transmissionBehaviour;
@@ -59,5 +63,9 @@ public abstract class Car {
 
     public void stopEngine() {
         engineBehaviour.stop();
+    }
+
+    public void setModifications(CarModification modifications) {
+        this.modifications = modifications;
     }
 }
