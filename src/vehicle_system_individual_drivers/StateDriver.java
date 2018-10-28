@@ -1,49 +1,29 @@
 package vehicle_system_individual_drivers;
 
+import vehicles.Car;
+import vehicles.Fiesta;
+import state.*;
+
 public class StateDriver {
     public static void main(String[] args) {
 
-        /*CarState carState3 = new CarState(3);
+        Car fiesta = new Fiesta();
 
-        carState3.turnKeyToStartEngine();
-        carState3.accelerateCar();
-        carState3.brakeCar();
-        carState3.turnKeyToStopEngine();
+        System.out.println("--State Pattern - Car changing states--\n");
 
-        System.out.println(carState3);
+        System.out.println("--On State - accelerating car--");
 
-        System.out.println("****************\n");
+        OnState onState = new OnState(fiesta);
+        onState.accelerateCar();
 
-        CarState carState2 = new CarState(2);
+        System.out.println("--Acceleration State - accelerating car--");
 
-        carState2.turnKeyToStartEngine();
-        carState2.accelerateCar();
-        carState2.brakeCar();
-        carState2.turnKeyToStopEngine();
+        AccelerationState accelerationState = new AccelerationState(fiesta);
+        accelerationState.accelerateCar();
 
-        System.out.println(carState2);
-
-        System.out.println("****************\n");
-
-        CarState carState1 = new CarState(1);
-
-        carState1.turnKeyToStartEngine();
-        carState1.accelerateCar();
-        carState1.brakeCar();
-        carState1.turnKeyToStopEngine();
-
-        System.out.println(carState1);
-
-        System.out.println("****************\n");
-
-        CarState carState0 = new CarState(0);
-
-        carState0.turnKeyToStartEngine();
-        carState0.accelerateCar();
-        carState0.brakeCar();
-        carState0.turnKeyToStopEngine();
-
-        System.out.println(carState0);*/
+        System.out.println("--Off state - brake--\n");
+        OffState offState = new OffState(fiesta);
+        offState.brakeCar();
     }
 }
 
