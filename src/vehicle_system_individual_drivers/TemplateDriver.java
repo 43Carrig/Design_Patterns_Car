@@ -6,18 +6,14 @@ public class TemplateDriver {
 
     public static void main(String args[])
     {
-        NewLearnerDriver newLearnerDriver = new NewLearnerDriver();
+        System.out.println("----Template Driver...----\n");
 
-        ExperiencedDriver experiencedDriver = new ExperiencedDriver();
-
-        System.out.println("----New Learner TemplateDriver...----\n");
-
-        newLearnerDriver.drive();
+        Driver newLearnerDriver = new NewLearnerDriver("Sean");
+        System.out.println(newLearnerDriver.getName());
 
         System.out.println("");
 
-        System.out.println("----Experienced TemplateDriver...----\n");
-
-        experiencedDriver.drive();
+        System.out.println("---New Driver---");
+        newLearnerDriver.drive();
     }
 }

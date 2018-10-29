@@ -2,9 +2,11 @@ package template;
 
 public abstract class Driver {
 
-    public Driver()
-    {
+    String name;
 
+    public Driver(String name)
+    {
+        this.name = name;
     }
 
     public void drive()
@@ -16,4 +18,12 @@ public abstract class Driver {
     abstract void accelerate();
 
     abstract void brake();
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
