@@ -1,21 +1,19 @@
 package template;
 
-public class Driver {
+public abstract class Driver {
 
-    public static void main(String args[])
+    public Driver()
     {
-        NewLearnerDriver newLearnerDriver = new NewLearnerDriver();
 
-        ExperiencedDriver experiencedDriver = new ExperiencedDriver();
-
-        System.out.println("----New Learner Driver...----\n");
-
-        newLearnerDriver.drive();
-
-        System.out.println("");
-
-        System.out.println("----Experienced Driver...----\n");
-
-        experiencedDriver.drive();
     }
+
+    public void drive()
+    {
+        accelerate();
+        brake();
+    }
+
+    abstract void accelerate();
+
+    abstract void brake();
 }

@@ -1,18 +1,14 @@
 package template;
 
-public class ExperiencedDriver {
+public class ExperiencedDriver extends Driver{
 
-    public void drive()
-    {
-        accelerate();
-        brake();
-    }
-
+    @Override
     public void accelerate() {
-        System.out.println("Experienced Driver accelerates!");
+        System.out.println("Experienced TemplateDriver accelerates!");
     }
 
+    @Override
     public void brake() {
-        System.out.println("Experienced Driver brakes!");
+        System.out.println("Experienced TemplateDriver brakes!");
     }
 }
