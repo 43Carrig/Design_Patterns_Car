@@ -49,4 +49,9 @@ public class CarLocation implements Subject {
         this.latitude = latitude;
         notifyObservers();
     }
+
+    public int carObserverCount()
+    {
+        return observers.size();
+    }
 }

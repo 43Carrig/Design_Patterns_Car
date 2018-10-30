@@ -1,8 +1,8 @@
 package observer;
 
 public class LocationObserver implements Observer {
-    double longitude;
-    double latitude;
+    private double longitude;
+    private double latitude;
     Subject carLocation;
 
     public LocationObserver(Subject carLocation)
@@ -18,23 +18,7 @@ public class LocationObserver implements Observer {
         this.latitude = latitude;
     }
 
-    public double getLongitude() {
-        return longitude;
-    }
-
-    public void setLongitude(double longitude) {
-        this.longitude = longitude;
-    }
-
-    public double getLatitude() {
-        return latitude;
-    }
-
-    public void setLatitude(double latitude) {
-        this.latitude = latitude;
-    }
-
     public void getCarLocation(){
-        System.out.println("Car position is - \nLongitude: " + getLongitude() + "\nLatitude" + getLatitude());
+        System.out.println("Car position is - \nLongitude: " + longitude + "\nLatitude" + latitude);
     }
 }
