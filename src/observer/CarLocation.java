@@ -21,7 +21,7 @@ public class CarLocation implements Subject {
 
     @Override
     public void unregister(Observer observer) {
-        observers.remove(observers);
+        observers.remove(observer);
     }
 
     @Override

@@ -18,7 +18,7 @@ public class LocationObserver implements Observer {
         this.latitude = latitude;
     }
 
-    public void getCarLocation(){
-        System.out.println("Car position is - \nLongitude: " + longitude + "\nLatitude" + latitude);
+    public String getCarLocation(){
+        return "Car position is - Longitude: " + longitude + " Latitude: " + latitude;
     }
 }
