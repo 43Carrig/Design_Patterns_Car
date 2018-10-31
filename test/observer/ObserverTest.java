@@ -1,11 +1,7 @@
 package observer;
 
-//import static org.hamcrest.CoreMatchers.not;
-import static org.junit.jupiter.api.Assertions.*;
-import observer.*;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
-
 
 import java.util.ArrayList;
 
