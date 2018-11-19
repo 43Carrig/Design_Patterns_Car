@@ -14,7 +14,7 @@ public class FactoryDriver {
         Car fiesta = fordFactory.buildCar(CarType.FORD_FIESTA);
         Car astra = opelFactory.buildCar(CarType.OPEL_ASTRA);
 
-        System.out.println("----Factory Pattern------\n");
+        System.out.println("----Factory Pattern-----\n");
 
         System.out.println("----Fiesta-----\n");
         System.out.println(fiesta.toString());
