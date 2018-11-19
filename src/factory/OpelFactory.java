@@ -8,14 +8,14 @@ public class OpelFactory extends CarFactory {
     @Override
     public Car buildCar(CarType model)
     {
-        Car c = null;
+        Car car = null;
 
         if(model.equals(CarType.OPEL_ASTRA))
         {
-            c = new Astra();
+            car = new Astra();
         }
 
-        return c;
+        return car;
     }
 }
 

@@ -21,5 +21,8 @@ public class FactoryDriver {
 
         System.out.println("----Astra-----\n");
         System.out.println(astra.toString());
+
+        System.out.println(fiesta.getPrice());
+        System.out.println(fiesta.getModel());
     }
 }

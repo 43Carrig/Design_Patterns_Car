@@ -9,14 +9,14 @@ public class FordFactory extends CarFactory {
     @Override
     public Car buildCar(CarType model)
     {
-        Car c = null;
+        Car car = null;
 
         if(model.equals(CarType.FORD_FIESTA))
         {
-            c = new Fiesta();
+            car = new Fiesta();
         }
 
-        return c;
+        return car;
     }
 
 }
