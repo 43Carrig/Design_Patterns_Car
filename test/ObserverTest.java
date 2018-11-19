@@ -1,4 +1,4 @@
-package observer;
+import observer.*;
 
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
@@ -8,7 +8,7 @@ import java.util.ArrayList;
 class ObserverTest {
 
     @Test
-    public void testObserver()
+    public void TestObserver()
     {
         CarLocation mainCarLocation = new CarLocation(new ArrayList<Observer>());
 
