@@ -10,7 +10,6 @@ public static void main(String args[])
 {
     // decorator
 
-    //**********************
     CarModification carModification = new Modification();
     System.out.println(carModification.toString() + ".. " + carModification.getPrice());
 
@@ -19,13 +18,5 @@ public static void main(String args[])
 
     carModification = new LeatherSeats(carModification);
     System.out.println(carModification.toString() + ".. " +carModification.getPrice());
-
-//    System.out.println("******Fiesta with Modifications************\n");
-//
-//    Car fiesta = new Fiesta();
-//    fiesta.setModifications(carModification);
-//
-//    System.out.println(fiesta.toString());
-
 }
 }
