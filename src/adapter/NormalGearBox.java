@@ -11,5 +11,5 @@ public class NormalGearBox implements GearBox {
     public String gearBoxChangingDown() {
         return "Normal gear box changing Down!";
     }
-    
+
 }

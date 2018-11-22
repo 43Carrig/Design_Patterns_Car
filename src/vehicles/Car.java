@@ -13,14 +13,14 @@ public class Car {
     private CarModification modifications;
 
     // Strategy
-    TransmissionBehaviour transmissionBehaviour;
-    EngineBehaviour engineBehaviour;
+    private TransmissionBehaviour transmissionBehaviour;
+    private EngineBehaviour engineBehaviour;
 
     //State
-    State onState;
-    State offState;
-    State accelerationState;
-    State state;
+    private State onState;
+    private State offState;
+    private State accelerationState;
+    private State state;
 
     public Car(State onState, State offState, State accelerationState) {
         this.onState = onState;
@@ -113,6 +113,8 @@ public class Car {
         transmissionBehaviour.gearShiftUp();
     }
 
+
+
     public void gearDown() {
         transmissionBehaviour.gearShiftDown();
     }
@@ -127,5 +129,13 @@ public class Car {
 
     public void setModifications(CarModification modifications) {
         this.modifications = modifications;
+    }
+
+    public TransmissionBehaviour getTransmissionBehaviour() {
+        return transmissionBehaviour;
+    }
+
+    public void setGearBox(TransmissionBehaviour transmissionBehaviour) {
+        this.transmissionBehaviour = transmissionBehaviour;
     }
 }

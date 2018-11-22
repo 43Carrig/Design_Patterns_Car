@@ -4,7 +4,11 @@ import strategy.TransmissionBehaviour;
 
 public class GearBoxAdapter implements TransmissionBehaviour {
 
-    GearBox gearBox;
+    private GearBox gearBox;
+
+    public GearBoxAdapter(GearBox gearBox) {
+        this.gearBox = gearBox;
+    }
 
     @Override
     public String gearShiftUp() {
