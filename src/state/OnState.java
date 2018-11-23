@@ -9,22 +9,22 @@ public class OnState implements State {
     }
 
     @Override
-    public void turnKeyToStartEngine() {
-        System.out.println("The car has already been started!");
+    public String turnKeyToStartEngine() {
+        return "The car has already been started!";
     }
 
     @Override
-    public void accelerateCar() {
-        System.out.println("The car is currently cruising!");
+    public String accelerateCar() {
+        return "The car is currently cruising!";
     }
 
     @Override
-    public void brakeCar() {
-        System.out.println("Can't break as you are not accelerating currently!");
+    public String brakeCar() {
+        return "Can't break as you are not accelerating currently!";
     }
 
     @Override
-    public void turnKeyToStopEngine() {
-        System.out.println("Turning key to turn off and stop engine!");
+    public String turnKeyToStopEngine() {
+        return "Turning key to turn off and stop engine!";
     }
 }
