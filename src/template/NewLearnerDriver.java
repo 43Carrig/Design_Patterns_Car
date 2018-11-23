@@ -8,13 +8,14 @@ public class NewLearnerDriver extends Driver{
     }
 
     @Override
-    public void accelerate() {
-        System.out.println("New Learner driver accelerates!");
+    public String accelerate() {
+
+        return "New Learner driver accelerates!";
     }
 
     @Override
-    public void brake() {
-        System.out.println("New Learner driver brakes!");
+    public String brake() {
+        return "New Learner driver brakes!";
 
     }
 }

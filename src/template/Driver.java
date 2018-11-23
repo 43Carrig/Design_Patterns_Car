@@ -9,15 +9,14 @@ public abstract class Driver {
         this.name = name;
     }
 
-    public void drive()
+    public String drive()
     {
-        accelerate();
-        brake();
+        return accelerate() + brake();
     }
 
-    abstract void accelerate();
+    public abstract String accelerate();
 
-    abstract void brake();
+    public abstract String brake();
 
     public String getName() {
         return name;

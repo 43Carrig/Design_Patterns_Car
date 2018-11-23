@@ -8,12 +8,13 @@ public class ExperiencedDriver extends Driver{
     }
 
     @Override
-    public void accelerate() {
-        System.out.println("Experienced TemplateDriver accelerates!");
+    public String accelerate() {
+        return "Experienced TemplateDriver accelerates!";
     }
 
     @Override
-    public void brake() {
-        System.out.println("Experienced TemplateDriver brakes!");
+    public String brake() {
+
+        return "Experienced TemplateDriver brakes!";
     }
 }
