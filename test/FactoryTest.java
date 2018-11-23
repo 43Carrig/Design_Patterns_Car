@@ -6,7 +6,7 @@ import vehicles.Car;
 
 public class FactoryTest {
 
-    @Test
+    @org.junit.Test
     public void TestFactory()
     {
         CarFactory fordFactory = new FordFactory();
