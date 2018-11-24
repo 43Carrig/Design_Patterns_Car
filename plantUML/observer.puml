@@ -1,9 +1,9 @@
 @startuml
 
 class CarLocation implements Subject {
-    List<Observer> observers;
-    double longitude;
-    double latitude;
+    -List<Observer> observers
+    -double longitude
+    -double latitude
 
     + CarLocation(List<Observer> observers)
 
@@ -28,9 +28,9 @@ class CarLocation implements Subject {
 }
 
 class LocationObserver implements Observer {
-    - double longitude;
-    - double latitude;
-    Subject carLocation;
+    - double longitude
+    - double latitude
+    Subject carLocation
 
      LocationObserver(Subject carLocation)
 
@@ -45,9 +45,9 @@ interface Observer {
 }
 
 interface Subject {
-    void register(Observer observer);
-    void unregister(Observer observer);
-    void notifyObservers();
+    void register(Observer observer)
+    void unregister(Observer observer)
+    void notifyObservers()
 }
 
 @enduml

@@ -2,7 +2,7 @@ package template;
 
 public abstract class Driver {
 
-    String name;
+    private String name;
 
     public Driver(String name)
     {

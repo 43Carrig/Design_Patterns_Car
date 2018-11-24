@@ -8,7 +8,7 @@ interface GearBox {
 
 class GearBoxAdapter implements TransmissionBehaviour {
 
-    -GearBox gearBox;
+    -GearBox gearBox
     +GearBoxAdapter(GearBox gearBox)
     @Override
     +String gearShiftUp()
@@ -28,7 +28,6 @@ class SportsGearBox implements GearBox {
 
     @Override
     public String gearBoxChangingUp()
-
     @Override
     public String gearBoxChangingDown()
 }

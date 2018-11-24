@@ -1,28 +1,50 @@
 @startuml
 
-class Automatic implements TransmissionBehaviour {
-
-    @Override
-    public String gearShiftUp()
-
-    @Override
-    public String gearShiftDown()
-}
-
 abstract class CarBehaviour {
 
     TransmissionBehaviour transmissionBehaviour;
     EngineBehaviour engineBehaviour;
 
-    public CarBehaviour()
+    + CarBehaviour()
 
-    public void setTransmissionBehaviour(TransmissionBehaviour transmissionBehaviour)
+    + void setTransmissionBehaviour(TransmissionBehaviour transmissionBehaviour)
 
-    public String getTransmissionBehaviour()
+    + String getTransmissionBehaviour()
 
-    public String getEngineBehaviour()
+    + String getEngineBehaviour()
 
-    public void setEngineBehaviour(EngineBehaviour engineBehaviour)
+    + void setEngineBehaviour(EngineBehaviour engineBehaviour)
+}
+
+class FamilyCar extends CarBehaviour {
+
+    + FamilyCar()
+        transmissionBehaviour = new Automatic()
+        engineBehaviour = new StandardEngine()
+
+}
+
+class ModelCar extends CarBehaviour {
+
+    + ModelCar()
+        engineBehaviour = new NoEngine()
+        transmissionBehaviour = new NoTransmission()
+}
+
+class SportsCar extends CarBehaviour {
+
+    + SportsCar()
+        transmissionBehaviour = new Manual()
+        engineBehaviour = new TurboEngine()
+}
+
+class Automatic implements TransmissionBehaviour {
+
+    @Override
+    + String gearShiftUp()
+
+    @Override
+    + String gearShiftDown()
 }
 
 interface EngineBehaviour {
@@ -31,28 +53,15 @@ interface EngineBehaviour {
     String noEngine()
 }
 
-class FamilyCar extends CarBehaviour {
-
-    public FamilyCar()
-        transmissionBehaviour = new Automatic()
-        engineBehaviour = new StandardEngine()
-
-}
-
 class Manual implements TransmissionBehaviour {
     @Override
-    public String gearShiftUp()
+    + String gearShiftUp()
 
     @Override
-    public String gearShiftDown()
+    + String gearShiftDown()
 }
 
-class ModelCar extends CarBehaviour {
 
-    public ModelCar()
-        engineBehaviour = new NoEngine()
-        transmissionBehaviour = new NoTransmission()
-}
 
 class NoEngine implements EngineBehaviour {
     @Override
@@ -67,29 +76,22 @@ class NoEngine implements EngineBehaviour {
 
 class NoTransmission implements TransmissionBehaviour{
     @Override
-    public String gearShiftUp()
+    + String gearShiftUp()
 
     @Override
-    public String gearShiftDown()
-}
-
-class SportsCar extends CarBehaviour {
-
-    public SportsCar()
-        transmissionBehaviour = new Manual()
-        engineBehaviour = new TurboEngine()
+    + String gearShiftDown()
 }
 
 class StandardEngine implements EngineBehaviour {
 
     @Override
-    public String start()
+    + String start()
 
     @Override
-    public String stop()
+    + String stop()
 
     @Override
-    public String noEngine()
+    + String noEngine()
 }
 
 interface TransmissionBehaviour {
@@ -100,13 +102,13 @@ interface TransmissionBehaviour {
 class TurboEngine implements EngineBehaviour {
 
     @Override
-    public String start()
+    + String start()
 
     @Override
-    public String stop()
+    + String stop()
 
     @Override
-    public String noEngine()
+    + String noEngine()
 }
 
 @enduml

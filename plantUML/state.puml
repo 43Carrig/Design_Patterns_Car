@@ -1,8 +1,8 @@
 @startuml
 
 class AccelerationState implements State {
-    Car car;
 
+    Car car
     public AccelerationState(Car car)
 
     @Override
@@ -19,8 +19,8 @@ class AccelerationState implements State {
 }
 
 class OffState implements State{
-    Car car;
 
+    Car car
     public OffState(Car car)
 
     @Override
@@ -37,8 +37,8 @@ class OffState implements State{
 }
 
 class OnState implements State {
-    Car car;
 
+    Car car
     public OnState(Car car)
 
     @Override
@@ -55,10 +55,10 @@ class OnState implements State {
 }
 
 interface State {
-    String turnKeyToStartEngine();
-    String accelerateCar();
-    String brakeCar();
-    String turnKeyToStopEngine();
+    String turnKeyToStartEngine()
+    String accelerateCar()
+    String brakeCar()
+    String turnKeyToStopEngine()
 }
 
 @enduml

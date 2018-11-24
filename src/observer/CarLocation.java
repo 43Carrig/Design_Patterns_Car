@@ -5,9 +5,9 @@ import vehicles.Car;
 import java.util.List;
 
 public class CarLocation implements Subject {
-    List<Observer> observers;
-    double longitude;
-    double latitude;
+    private List<Observer> observers;
+    private double longitude;
+    private double latitude;
 
     public CarLocation(List<Observer> observers)
     {

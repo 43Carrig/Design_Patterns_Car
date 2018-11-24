@@ -2,7 +2,7 @@
 
 abstract class CarFactory {
 
-    +abstract Car buildCar(CarType model);
++abstract Car buildCar(CarType model);
 }
 
 enum CarType {

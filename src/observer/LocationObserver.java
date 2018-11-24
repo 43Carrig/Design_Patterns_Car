@@ -3,7 +3,7 @@ package observer;
 public class LocationObserver implements Observer {
     private double longitude;
     private double latitude;
-    Subject carLocation;
+    private Subject carLocation;
 
     public LocationObserver(Subject carLocation)
     {

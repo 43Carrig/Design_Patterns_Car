@@ -2,8 +2,8 @@ package strategy;
 
 public abstract class CarBehaviour {
 
-    TransmissionBehaviour transmissionBehaviour;
-    EngineBehaviour engineBehaviour;
+    protected TransmissionBehaviour transmissionBehaviour;
+    protected EngineBehaviour engineBehaviour;
 
     public CarBehaviour() {
 
