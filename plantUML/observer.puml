@@ -1,0 +1,53 @@
+@startuml
+
+class CarLocation implements Subject {
+    List<Observer> observers;
+    double longitude;
+    double latitude;
+
+    + CarLocation(List<Observer> observers)
+
+    @Override
+    + void register(Observer observer)
+
+    @Override
+    + void unregister(Observer observer)
+
+    @Override
+    + void notifyObservers()
+
+    + double getLongitude()
+
+    + void setLongitude(double longitude)
+
+    + double getLatitude()
+
+    + void setLatitude(double latitude)
+
+    + int carObserverCount()
+}
+
+class LocationObserver implements Observer {
+    - double longitude;
+    - double latitude;
+    Subject carLocation;
+
+     LocationObserver(Subject carLocation)
+
+    @Override
+    public void update(double longitude, double latitude)
+
+    public String getCarLocation()
+}
+
+interface Observer {
+    void update(double longitude, double latitude);
+}
+
+interface Subject {
+    void register(Observer observer);
+    void unregister(Observer observer);
+    void notifyObservers();
+}
+
+@enduml

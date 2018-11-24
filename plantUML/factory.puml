@@ -1,0 +1,38 @@
+@startuml
+
+abstract class CarFactory {
+
+    +abstract Car buildCar(CarType model);
+}
+
+enum CarType {
+    FORD_FIESTA,
+    FORD_MONDEO,
+    OPEL_ASTRA,
+    OPEL_INSIGNIA
+}
+
+class FordFactory extends CarFactory {
+
+    @Override
+    public Car buildCar(CarType model)
+}
+
+class OpelFactory extends CarFactory {
+
+    @Override
+    public Car buildCar(CarType model)
+
+}
+
+class Fiesta extends Car {
+
+    public Fiesta()
+}
+
+class Astra extends Car {
+
+    public Astra()
+}
+
+@enduml

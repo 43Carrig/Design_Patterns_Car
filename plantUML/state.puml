@@ -1,0 +1,64 @@
+@startuml
+
+class AccelerationState implements State {
+    Car car;
+
+    public AccelerationState(Car car)
+
+    @Override
+    public String turnKeyToStartEngine()
+
+    @Override
+    public String accelerateCar()
+
+    @Override
+    public String brakeCar()
+
+    @Override
+    public String turnKeyToStopEngine()
+}
+
+class OffState implements State{
+    Car car;
+
+    public OffState(Car car)
+
+    @Override
+    public String turnKeyToStartEngine()
+
+    @Override
+    public String accelerateCar()
+
+    @Override
+    public String brakeCar()
+
+    @Override
+    public String turnKeyToStopEngine()
+}
+
+class OnState implements State {
+    Car car;
+
+    public OnState(Car car)
+
+    @Override
+    public String turnKeyToStartEngine()
+
+    @Override
+    public String accelerateCar()
+
+    @Override
+    public String brakeCar()
+
+    @Override
+    public String turnKeyToStopEngine()
+}
+
+interface State {
+    String turnKeyToStartEngine();
+    String accelerateCar();
+    String brakeCar();
+    String turnKeyToStopEngine();
+}
+
+@enduml

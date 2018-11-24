@@ -1,0 +1,36 @@
+@startuml
+
+
+interface GearBox {
+    +String gearBoxChangingUp()
+    +String gearBoxChangingDown()
+}
+
+class GearBoxAdapter implements TransmissionBehaviour {
+
+    -GearBox gearBox;
+    +GearBoxAdapter(GearBox gearBox)
+    @Override
+    +String gearShiftUp()
+    @Override
+    +String gearShiftDown()
+}
+
+class NormalGearBox implements GearBox {
+
+    @Override
+    public String gearBoxChangingUp()
+    @Override
+    public String gearBoxChangingDown()
+}
+
+class SportsGearBox implements GearBox {
+
+    @Override
+    public String gearBoxChangingUp()
+
+    @Override
+    public String gearBoxChangingDown()
+}
+
+@enduml

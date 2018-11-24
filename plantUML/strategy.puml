@@ -1,0 +1,112 @@
+@startuml
+
+class Automatic implements TransmissionBehaviour {
+
+    @Override
+    public String gearShiftUp()
+
+    @Override
+    public String gearShiftDown()
+}
+
+abstract class CarBehaviour {
+
+    TransmissionBehaviour transmissionBehaviour;
+    EngineBehaviour engineBehaviour;
+
+    public CarBehaviour()
+
+    public void setTransmissionBehaviour(TransmissionBehaviour transmissionBehaviour)
+
+    public String getTransmissionBehaviour()
+
+    public String getEngineBehaviour()
+
+    public void setEngineBehaviour(EngineBehaviour engineBehaviour)
+}
+
+interface EngineBehaviour {
+    String start()
+    String stop()
+    String noEngine()
+}
+
+class FamilyCar extends CarBehaviour {
+
+    public FamilyCar()
+        transmissionBehaviour = new Automatic()
+        engineBehaviour = new StandardEngine()
+
+}
+
+class Manual implements TransmissionBehaviour {
+    @Override
+    public String gearShiftUp()
+
+    @Override
+    public String gearShiftDown()
+}
+
+class ModelCar extends CarBehaviour {
+
+    public ModelCar()
+        engineBehaviour = new NoEngine()
+        transmissionBehaviour = new NoTransmission()
+}
+
+class NoEngine implements EngineBehaviour {
+    @Override
+    + String start()
+
+    @Override
+    + String stop()
+
+    @Override
+    + String noEngine()
+}
+
+class NoTransmission implements TransmissionBehaviour{
+    @Override
+    public String gearShiftUp()
+
+    @Override
+    public String gearShiftDown()
+}
+
+class SportsCar extends CarBehaviour {
+
+    public SportsCar()
+        transmissionBehaviour = new Manual()
+        engineBehaviour = new TurboEngine()
+}
+
+class StandardEngine implements EngineBehaviour {
+
+    @Override
+    public String start()
+
+    @Override
+    public String stop()
+
+    @Override
+    public String noEngine()
+}
+
+interface TransmissionBehaviour {
+    + String gearShiftUp()
+    + String gearShiftDown()
+}
+
+class TurboEngine implements EngineBehaviour {
+
+    @Override
+    public String start()
+
+    @Override
+    public String stop()
+
+    @Override
+    public String noEngine()
+}
+
+@enduml

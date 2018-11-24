@@ -1,0 +1,42 @@
+@startuml
+
+title Classes - Class Diagram
+
+
+class Alloys extends ModDecorator{
+
+    +Alloys(CarModification carModification)
+    +double getPrice()
+    @Override
+    +String toString()
+}
+
+abstract class CarModification {
+
+    +abstract double getPrice()
+    +abstract String toString()
+}
+
+class LeatherSeats extends ModDecorator{
+
+    +LeatherSeats(CarModification carModification)
+    @Override
+    +double getPrice()
+    +String toString()
+}
+
+abstract class ModDecorator extends Modification{
+
+    #CarModification carModification;
+    +ModDecorator(CarModification carModification)
+    @Override
+    +double getPrice()
+}
+
+class Modification extends CarModification{
+
+    +double getPrice()
+    +String toString()
+}
+
+@enduml

@@ -1,0 +1,42 @@
+@startuml
+
+abstract class Driver {
+
+    String name;
+
+    public Driver(String name)
+
+    public String drive()
+
+    public abstract String accelerate()
+
+    public abstract String brake()
+
+    public String getName()
+
+    public void setName(String name)
+}
+
+class ExperiencedDriver extends Driver{
+
+    public ExperiencedDriver(String name)
+
+    @Override
+    public String accelerate()
+
+    @Override
+    public String brake()
+}
+
+class NewLearnerDriver extends Driver{
+
+    public NewLearnerDriver(String name)
+
+    @Override
+    public String accelerate()
+
+    @Override
+    public String brake()
+}
+
+@enduml
