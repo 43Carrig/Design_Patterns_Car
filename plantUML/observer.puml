@@ -1,19 +1,16 @@
 @startuml
 
 class CarLocation implements Subject {
-    -List<Observer> observers
-    -double longitude
-    -double latitude
+    - List<Observer> observers
+    - double longitude
+    - double latitude
 
     + CarLocation(List<Observer> observers)
 
-    @Override
     + void register(Observer observer)
 
-    @Override
     + void unregister(Observer observer)
 
-    @Override
     + void notifyObservers()
 
     + double getLongitude()
@@ -32,12 +29,11 @@ class LocationObserver implements Observer {
     - double latitude
     Subject carLocation
 
-     LocationObserver(Subject carLocation)
+    LocationObserver(Subject carLocation)
 
-    @Override
-    public void update(double longitude, double latitude)
+    + void update(double longitude, double latitude)
 
-    public String getCarLocation()
+    + String getCarLocation()
 }
 
 interface Observer {

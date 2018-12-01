@@ -2,7 +2,7 @@
 
 abstract class CarFactory {
 
-+abstract Car buildCar(CarType model);
++ abstract Car buildCar(CarType model);
 }
 
 enum CarType {
@@ -14,25 +14,22 @@ enum CarType {
 
 class FordFactory extends CarFactory {
 
-    @Override
-    public Car buildCar(CarType model)
+    + Car buildCar(CarType model)
 }
 
 class OpelFactory extends CarFactory {
 
-    @Override
-    public Car buildCar(CarType model)
-
+    + Car buildCar(CarType model)
 }
 
 class Fiesta extends Car {
 
-    public Fiesta()
+    + Fiesta()
 }
 
 class Astra extends Car {
 
-    public Astra()
+    + Astra()
 }
 
 @enduml

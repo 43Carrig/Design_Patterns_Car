@@ -4,39 +4,35 @@ abstract class Driver {
 
     String name;
 
-    public Driver(String name)
+    + Driver(String name)
 
-    public String drive()
+    + String drive()
 
-    public abstract String accelerate()
+    + abstract String accelerate()
 
-    public abstract String brake()
+    + abstract String brake()
 
-    public String getName()
+    + String getName()
 
-    public void setName(String name)
+    + void setName(String name)
 }
 
 class ExperiencedDriver extends Driver{
 
-    public ExperiencedDriver(String name)
+    + ExperiencedDriver(String name)
 
-    @Override
-    public String accelerate()
+    + String accelerate()
 
-    @Override
-    public String brake()
+    + String brake()
 }
 
 class NewLearnerDriver extends Driver{
 
-    public NewLearnerDriver(String name)
+    + NewLearnerDriver(String name)
 
-    @Override
-    public String accelerate()
+    + String accelerate()
 
-    @Override
-    public String brake()
+    + String brake()
 }
 
 @enduml

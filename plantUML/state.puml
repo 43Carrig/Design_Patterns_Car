@@ -3,55 +3,44 @@
 class AccelerationState implements State {
 
     Car car
-    public AccelerationState(Car car)
+    + AccelerationState(Car car)
 
-    @Override
-    public String turnKeyToStartEngine()
+    + String turnKeyToStartEngine()
 
-    @Override
-    public String accelerateCar()
+    + String accelerateCar()
 
-    @Override
-    public String brakeCar()
+    + String brakeCar()
 
-    @Override
-    public String turnKeyToStopEngine()
+    + String turnKeyToStopEngine()
 }
 
 class OffState implements State{
 
     Car car
-    public OffState(Car car)
+    + OffState(Car car)
 
-    @Override
-    public String turnKeyToStartEngine()
+    + String turnKeyToStartEngine()
 
-    @Override
-    public String accelerateCar()
+    + String accelerateCar()
 
-    @Override
-    public String brakeCar()
+    + String brakeCar()
 
-    @Override
-    public String turnKeyToStopEngine()
+    + String turnKeyToStopEngine()
 }
 
 class OnState implements State {
 
     Car car
-    public OnState(Car car)
 
-    @Override
-    public String turnKeyToStartEngine()
+    + OnState(Car car)
 
-    @Override
-    public String accelerateCar()
+    + String turnKeyToStartEngine()
 
-    @Override
-    public String brakeCar()
+    + String accelerateCar()
 
-    @Override
-    public String turnKeyToStopEngine()
+    + String brakeCar()
+
+    + String turnKeyToStopEngine()
 }
 
 interface State {

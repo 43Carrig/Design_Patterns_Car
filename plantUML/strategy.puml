@@ -40,10 +40,8 @@ class SportsCar extends CarBehaviour {
 
 class Automatic implements TransmissionBehaviour {
 
-    @Override
     + String gearShiftUp()
 
-    @Override
     + String gearShiftDown()
 }
 
@@ -54,43 +52,34 @@ interface EngineBehaviour {
 }
 
 class Manual implements TransmissionBehaviour {
-    @Override
+
     + String gearShiftUp()
 
-    @Override
     + String gearShiftDown()
 }
 
-
-
 class NoEngine implements EngineBehaviour {
-    @Override
+
     + String start()
 
-    @Override
     + String stop()
 
-    @Override
     + String noEngine()
 }
 
 class NoTransmission implements TransmissionBehaviour{
-    @Override
+
     + String gearShiftUp()
 
-    @Override
     + String gearShiftDown()
 }
 
 class StandardEngine implements EngineBehaviour {
 
-    @Override
     + String start()
 
-    @Override
     + String stop()
 
-    @Override
     + String noEngine()
 }
 
@@ -101,13 +90,10 @@ interface TransmissionBehaviour {
 
 class TurboEngine implements EngineBehaviour {
 
-    @Override
     + String start()
 
-    @Override
     + String stop()
 
-    @Override
     + String noEngine()
 }
 
