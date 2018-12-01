@@ -27,9 +27,9 @@ class CarLocation implements Subject {
 class LocationObserver implements Observer {
     - double longitude
     - double latitude
-    Subject carLocation
+    - Subject carLocation
 
-    LocationObserver(Subject carLocation)
+    + LocationObserver(Subject carLocation)
 
     + void update(double longitude, double latitude)
 
@@ -37,7 +37,7 @@ class LocationObserver implements Observer {
 }
 
 interface Observer {
-    void update(double longitude, double latitude);
+    void update(double longitude, double latitude)
 }
 
 interface Subject {

@@ -2,7 +2,7 @@
 
 abstract class CarFactory {
 
-+ abstract Car buildCar(CarType model);
++ abstract Car buildCar(CarType model)
 }
 
 enum CarType {
@@ -32,4 +32,24 @@ class Astra extends Car {
     + Astra()
 }
 
+class Car {
+
+    - String model
+    - double price
+    - CarModification modifications
+    - TransmissionBehaviour transmissionBehaviour
+    - EngineBehaviour engineBehaviour
+
+    + Car()
+
+    + Car(String model, double price)
+
+    + String getModel()
+
+    + void setModel(String model)
+
+    + double getPrice()
+
+    + void setPrice(double price)
+}
 @enduml

@@ -30,4 +30,9 @@ class SportsGearBox implements GearBox {
     + String gearBoxChangingDown()
 }
 
+interface TransmissionBehaviour {
+    String gearShiftUp()
+    String gearShiftDown()
+}
+
 @enduml
