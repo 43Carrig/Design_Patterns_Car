@@ -22,7 +22,7 @@ public class AdapterDriver {
 
         System.out.println(normalGearBox.gearShiftUp());
 
-        //*****************************************************
+        //******************************************************
 
         Car fiesta = new Fiesta();
 
